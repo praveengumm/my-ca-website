@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULIVARTHI & ASSOCIATES | Chartered Accountants</title>
+    <style>
+        :root { 
+            --navy: #051622; 
+            --gold: #deb887; 
+            --white: #ffffff;
+            --light-bg: #f9f9f9;
+        }
+        
+        body { font-family: 'Times New Roman', Times, serif; margin: 0; color: #333; line-height: 1.6; background-color: var(--white); }
+        
+        /* Header & Logo */
+        header { 
+            background: var(--navy); 
+            color: var(--white); 
+            padding: 1rem 8%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 3px solid var(--gold);
+            position: sticky; top: 0; z-index: 1000;
+        }
+
+        .logo-box { display: flex; align-items: center; gap: 15px; }
+        /* Professional CA Icon using CSS if image fails */
+        .ca-symbol { 
+            background: var(--gold); 
+            color: var(--navy); 
+            font-weight: bold; 
+            padding: 10px; 
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-family: Arial, sans-serif;
+        }
+        
+        .brand-text h1 { margin: 0; font-size: 1.4rem; letter-spacing: 1px; color: var(--gold); text-transform: uppercase; }
+        .brand-text p { margin: 0; font-size: 0.8rem; letter-spacing: 2px; opacity: 0.9; font-family: Arial, sans-serif; }
+
+        /* Hero Section with Professional Office Background */
+        .hero { 
+            background: linear-gradient(rgba(5, 22, 34, 0.8), rgba(5, 22, 34, 0.8)), 
+                        url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            height: 60vh; background-size: cover; background-position: center;
+            color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 10%;
+        }
+        .hero h2 { font-size: 3rem; margin-bottom: 5px; color: var(--gold); }
+        .hero-creds { font-size: 1.4rem; font-weight: bold; margin-bottom: 25px; font-family: Arial, sans-serif; }
+
+        /* Services */
+        .container { padding: 60px 8%; }
+        .section-header { text-align: center; margin-bottom: 50px; }
+        .section-header h2 { font-size: 2.2rem; color: var(--navy); border-bottom: 2px solid var(--gold); display: inline-block; padding-bottom: 10px; }
+
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .service-card { 
+            background: var(--light-bg); padding: 30px; border-radius: 0; 
+            transition: 0.3s; border: 1px solid #eee; border-top: 4px solid var(--navy);
+        }
+        .service-card:hover { border-top: 4px solid var(--gold); background: #fff; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .service-card h3 { color: var(--navy); font-family: Arial, sans-serif; font-size: 1.1rem; }
+
+        /* Footer/Contact */
+        .footer-info { background: var(--navy); color: white; padding: 50px 8%; display: flex; flex-wrap: wrap; gap: 40px; }
+        .contact-col { flex: 2; min-width: 300px; }
+        .contact-col h3 { color: var(--gold); border-bottom: 1px solid #333; padding-bottom: 10px; }
+        .contact-col p { margin: 10px 0; font-family: Arial, sans-serif; }
+        
+        .btn { 
+            background: var(--gold); color: #000; padding: 15px 30px; 
+            text-decoration: none; font-weight: bold; 
+            display: inline-block; transition: 0.3s; font-family: Arial, sans-serif;
+            text-transform: uppercase; margin-top: 10px;
+        }
+        .btn:hover { background: #fff; }
+
+        /* Floating WhatsApp */
+        .whatsapp-float {
+            position: fixed; bottom: 20px; right: 20px;
+            background: #25d366; color: white; padding: 15px 25px;
+            border-radius: 50px; text-decoration: none; font-weight: bold;
+            font-family: Arial, sans-serif; box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 2000;
+        }
+
+        .sub-footer { background: #000; color: #555; text-align: center; padding: 15px; font-size: 0.8rem; font-family: Arial, sans-serif; }
+
+        @media (max-width: 768px) {
+            .hero h2 { font-size: 2rem; }
+            header { flex-direction: column; padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-box">
+        <div class="ca-symbol">CA</div>
+        <div class="brand-text">
+            <h1>PULIVARTHI & ASSOCIATES</h1>
+            <p>CHARTERED ACCOUNTANTS</p>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <p style="letter-spacing: 3px; font-family: Arial; margin-bottom: 10px;">PROFESSIONAL EXCELLENCE</p>
+    <h2>CA Chanukya Nuthalapati</h2>
+    <div class="hero-creds">CA, LLB, B.com</div>
+    <p style="max-width: 800px; font-size: 1.1rem;">Trusted advisor for Statutory Audit, Taxation, and Legal compliance.</p>
+</section>
+
+<div class="container">
+    <div class="section-header">
+        <h2>Expertise & Services</h2>
+    </div>
+    <div class="services-grid">
+        <div class="service-card">
+            <h3>Direct & Indirect Taxation</h3>
+            <p>Expert handling of Income Tax returns, Tax planning, and GST compliance for all business types.</p>
+        </div>
+        <div class="service-card">
+            <h3>Audit & Assurance</h3>
+            <p>Conducting Statutory, Internal, and Tax Audits with detailed precision and regulatory compliance.</p>
+        </div>
+        <div class="service-card">
+            <h3>Legal Advisory (LLB)</h3>
+            <p>Corporate legal services, drafting agreements, and representation for legal-financial matters.</p>
+        </div>
+        <div class="service-card">
+            <h3>Company Law (ROC)</h3>
+            <p>End-to-end registration and secretarial services for Private Limited companies and LLPs.</p>
+        </div>
+        <div class="service-card">
+            <h3>Finance & Project Reports</h3>
+            <p>Preparation of detailed project reports (DPR) for bank loans and capital restructuring.</p>
+        </div>
+        <div class="service-card">
+            <h3>Start-up Mentoring</h3>
+            <p>Guidance on MSME registration, business structure, and financial roadmap for entrepreneurs.</p>
+        </div>
+    </div>
+</div>
+
+<section class="footer-info">
+    <div class="contact-col">
+        <h3>Contact Details</h3>
+        <p><strong>PULIVARTHI & ASSOCIATES</strong></p>
+        <p>CA Chanukya Nuthalapati, CA, LLB, B.com</p>
+        <p>Arundel pet, 5th Lane, Guntur - 522002.</p>
+        <p>Email: cachanukya@gmail.com</p>
+        <p>Phone: +91 98498 53432 | 73373 67662</p>
+    </div>
+    <div style="flex: 1; min-width: 250px;">
+        <a href="tel:+919849853432" class="btn">Call Office</a>
+    </div>
+</section>
+
+<a href="https://wa.me/919849853432?text=Hello%20CA%20Chanukya,%20I%20found%20your%20profile%20on%20Justdial" class="whatsapp-float" target="_blank">
+    WhatsApp Us
+</a>
+
+<div class="sub-footer">
+    &copy; 2026 PULIVARTHI & ASSOCIATES | Chartered Accountants & Legal Consultants.
+</div>
+
+</body>
+</html>
