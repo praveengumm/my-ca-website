@@ -5,31 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PULIVARTHI & ASSOCIATES | CA & Legal Consultants</title>
     <style>
-        :root { --navy: #051622; --gold: #deb887; --white: #ffffff; --light-bg: #f9f9f9; }
+        :root { 
+            --navy: #051622; 
+            --gold: #deb887; 
+            --white: #ffffff;
+            --light-bg: #f9f9f9;
+        }
+        
         body { font-family: 'Times New Roman', Times, serif; margin: 0; color: #333; line-height: 1.6; background-color: var(--white); }
-        header { background: var(--navy); color: var(--white); padding: 1rem 8%; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--gold); position: sticky; top: 0; z-index: 1000; }
+        
+        header { 
+            background: var(--navy); 
+            color: var(--white); 
+            padding: 1rem 8%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 3px solid var(--gold);
+            position: sticky; top: 0; z-index: 1000;
+        }
+
         .logo-box { display: flex; align-items: center; gap: 15px; }
-        .ca-symbol { background: var(--gold); color: var(--navy); font-weight: bold; padding: 10px; border-radius: 5px; font-size: 1.2rem; font-family: Arial, sans-serif; }
+        .ca-symbol { 
+            background: var(--gold); 
+            color: var(--navy); 
+            font-weight: bold; 
+            padding: 10px; 
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-family: Arial, sans-serif;
+        }
+        
         .brand-text h1 { margin: 0; font-size: 1.4rem; letter-spacing: 1px; color: var(--gold); text-transform: uppercase; }
         .brand-text p { margin: 0; font-size: 0.8rem; letter-spacing: 2px; opacity: 0.9; font-family: Arial, sans-serif; }
-        .hero { background: linear-gradient(rgba(5, 22, 34, 0.8), rgba(5, 22, 34, 0.8)), url('https://images.pexels.com/photos/4472648/pexels-photo-4472648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); height: 60vh; background-size: cover; background-position: center; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 10%; }
+
+        .hero { 
+            background: linear-gradient(rgba(5, 22, 34, 0.8), rgba(5, 22, 34, 0.8)), 
+                        url('https://images.pexels.com/photos/4472648/pexels-photo-4472648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            height: 60vh; background-size: cover; background-position: center;
+            color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 10%;
+        }
         .hero h2 { font-size: 3rem; margin-bottom: 5px; color: var(--gold); }
         .hero-creds { font-size: 1.4rem; font-weight: bold; margin-bottom: 25px; font-family: Arial, sans-serif; }
+
         .container { padding: 60px 8%; }
-        .section-header { text-align: center; margin-bottom: 40px; }
+        .section-header { text-align: center; margin-bottom: 50px; }
         .section-header h2 { font-size: 2.2rem; color: var(--navy); border-bottom: 2px solid var(--gold); display: inline-block; padding-bottom: 10px; }
+
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
-        .service-card { background: var(--light-bg); padding: 30px; border-radius: 0; transition: 0.3s; border: 1px solid #eee; border-top: 4px solid var(--navy); }
+        .service-card { 
+            background: var(--light-bg); padding: 30px; border-radius: 0; 
+            transition: 0.3s; border: 1px solid #eee; border-top: 4px solid var(--navy);
+        }
         .service-card:hover { border-top: 4px solid var(--gold); background: #fff; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
         .service-card h3 { color: var(--navy); font-family: Arial, sans-serif; font-size: 1.2rem; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
         .service-card ul { padding-left: 20px; font-size: 0.95rem; }
+
         .footer-info { background: var(--navy); color: white; padding: 50px 8%; display: flex; flex-wrap: wrap; gap: 40px; }
         .contact-col { flex: 2; min-width: 300px; }
         .contact-col h3 { color: var(--gold); border-bottom: 1px solid #333; padding-bottom: 10px; }
-        .btn { background: var(--gold); color: #000; padding: 15px 30px; text-decoration: none; font-weight: bold; display: inline-block; transition: 0.3s; font-family: Arial, sans-serif; text-transform: uppercase; margin-top: 10px; }
-        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; font-family: Arial, sans-serif; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 2000; }
+        
+        .btn { 
+            background: var(--gold); color: #000; padding: 15px 30px; 
+            text-decoration: none; font-weight: bold; 
+            display: inline-block; transition: 0.3s; font-family: Arial, sans-serif;
+            text-transform: uppercase; margin-top: 10px;
+        }
+        .btn:hover { background: #fff; }
+
+        .whatsapp-float {
+            position: fixed; bottom: 20px; right: 20px;
+            background: #25d366; color: white; padding: 15px 25px;
+            border-radius: 50px; text-decoration: none; font-weight: bold;
+            font-family: Arial, sans-serif; box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 2000;
+        }
+
         .sub-footer { background: #000; color: #555; text-align: center; padding: 15px; font-size: 0.8rem; font-family: Arial, sans-serif; }
-        @media (max-width: 768px) { .hero h2 { font-size: 2rem; } header { flex-direction: column; padding: 15px; } }
+
+        @media (max-width: 768px) {
+            .hero h2 { font-size: 2rem; }
+            header { flex-direction: column; padding: 15px; }
+        }
     </style>
 </head>
 <body>
@@ -45,4 +102,85 @@
 </header>
 
 <section class="hero">
-    <p style="letter-spacing:
+    <p style="letter-spacing: 3px; font-family: Arial; margin-bottom: 10px;">FINANCIAL & LEGAL ADVISORY</p>
+    <h2>CA Chanukya Nuthalapati</h2>
+    <div class="hero-creds">CA, LLB, B.com</div>
+    <p style="max-width: 800px; font-size: 1.1rem;">Specializing in MSME Growth, Government Subsidies, and Corporate Litigation.</p>
+</section>
+
+<div class="container">
+    <div class="section-header">
+        <h2>Expertise & Specializations</h2>
+    </div>
+    <div class="services-grid">
+        <div class="service-card">
+            <h3>MSME & Subsidy Consultancy</h3>
+            <ul>
+                <li>Government Subsidies & Incentives</li>
+                <li>MSME Registration & Compliance</li>
+                <li>Strategic Business Consultancy</li>
+                <li>Central & State Subsidy Schemes</li>
+            </ul>
+        </div>
+        <div class="service-card">
+            <h3>Bank Finance & Loans</h3>
+            <ul>
+                <li>Cash Credit (CC) & Overdraft (OD)</li>
+                <li>Machinery & Term Loans</li>
+                <li>Project Reports for Bank Finance</li>
+                <li>Working Capital Management</li>
+            </ul>
+        </div>
+        <div class="service-card">
+            <h3>Legal & Litigation</h3>
+            <ul>
+                <li>Commercial & Corporate Litigation</li>
+                <li>Legal Vetting & Documentation</li>
+                <li>Contractual Disputes</li>
+                <li>ROC & Statutory Representations</li>
+            </ul>
+        </div>
+        <div class="service-card">
+            <h3>Incorporation & Registration</h3>
+            <ul>
+                <li>Company & LLP Incorporation</li>
+                <li>Partnership Firm Registration</li>
+                <li>GST & Income Tax Registration</li>
+                <li>Import-Export Code (IEC)</li>
+            </ul>
+        </div>
+        <div class="service-card">
+            <h3>Audit & Taxation</h3>
+            <ul>
+                <li>Statutory & Internal Audit</li>
+                <li>Income Tax Returns (ITR)</li>
+                <li>GST Annual Returns & Audit</li>
+                <li>Tax Planning & Scrutiny</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<section class="footer-info">
+    <div class="contact-col">
+        <h3>PULIVARTHI & ASSOCIATES</h3>
+        <p><strong>CA Chanukya Nuthalapati</strong>, CA, LLB, B.com</p>
+        <p>Arundel pet, 5th Lane, Guntur - 522002.</p>
+        <p><strong>Contact:</strong> +91 98498 53432 | 73373 67662</p>
+        <p><strong>Email:</strong> cachanukya@gmail.com</p>
+    </div>
+    <div style="flex: 1; min-width: 250px;">
+        <a href="tel:+919849853432" class="btn">Call for Appointment</a>
+    </div>
+</section>
+
+<a href="https://wa.me/919849853432?text=Hello%20CA%20Chanukya,%20I%20am%20interested%20in%20MSME/Loan%20consultancy." class="whatsapp-float" target="_blank">
+    WhatsApp Us
+</a>
+
+<div class="sub-footer">
+    &copy; 2026 PULIVARTHI & ASSOCIATES | Chartered Accountants & Legal Consultants.
+</div>
+
+</body>
+</html>
